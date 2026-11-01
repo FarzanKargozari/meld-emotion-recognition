@@ -1,0 +1,96 @@
+
+[1;36mTraining roberta_context3, seed 42[0m
+It must reach a macro-F1 of at least 0.468 to earn two more runs. Each round takes about 25 minutes.
+To stop: click in this panel and press Control+C. Run this step again to continue.
+W1031 17:05:55.067000 58990 .venv/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 197/197 [00:00<00:00, 7994.79it/s]
+[transformers] [1mRobertaForSequenceClassification LOAD REPORT[0m from: roberta-base
+Key                        | Status     | 
+---------------------------+------------+-
+lm_head.bias               | UNEXPECTED | 
+lm_head.dense.weight       | UNEXPECTED | 
+lm_head.dense.bias         | UNEXPECTED | 
+lm_head.layer_norm.bias    | UNEXPECTED | 
+lm_head.layer_norm.weight  | UNEXPECTED | 
+classifier.out_proj.weight | MISSING    | 
+classifier.dense.weight    | MISSING    | 
+classifier.out_proj.bias   | MISSING    | 
+classifier.dense.bias      | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+roberta_context3 | seed 42 | cpu | 9,989 train lines
+  step 100/1249 | 0.93s per step
+  step 200/1249 | 0.90s per step
+  step 300/1249 | 0.91s per step
+  step 400/1249 | 0.81s per step
+  step 500/1249 | 0.79s per step
+  step 600/1249 | 0.82s per step
+  step 700/1249 | 0.80s per step
+  step 800/1249 | 0.83s per step
+  step 900/1249 | 0.83s per step
+  step 1000/1249 | 0.88s per step
+  step 1100/1249 | 0.80s per step
+  step 1200/1249 | 0.82s per step
+Epoch 1 | loss 1.569 | macro-F1 0.400 | weighted-F1 0.565 | 1072s  <- best
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  2.47it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  2.47it/s]
+  step 100/1249 | 0.92s per step
+  step 200/1249 | 0.86s per step
+  step 300/1249 | 0.82s per step
+  step 400/1249 | 0.82s per step
+  step 500/1249 | 0.91s per step
+  step 600/1249 | 0.86s per step
+  step 700/1249 | 0.83s per step
+  step 800/1249 | 0.87s per step
+  step 900/1249 | 0.87s per step
+  step 1000/1249 | 0.79s per step
+  step 1100/1249 | 0.73s per step
+  step 1200/1249 | 0.82s per step
+Epoch 2 | loss 1.205 | macro-F1 0.456 | weighted-F1 0.586 | 1072s  <- best
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+  step 100/1249 | 0.83s per step
+  step 200/1249 | 0.82s per step
+  step 300/1249 | 0.77s per step
+  step 400/1249 | 0.80s per step
+  step 500/1249 | 0.83s per step
+  step 600/1249 | 0.78s per step
+  step 700/1249 | 0.81s per step
+  step 800/1249 | 0.96s per step
+  step 900/1249 | 1.06s per step
+  step 1000/1249 | 0.86s per step
+  step 1100/1249 | 0.84s per step
+  step 1200/1249 | 0.98s per step
+Epoch 3 | loss 0.973 | macro-F1 0.473 | weighted-F1 0.591 | 1095s  <- best
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.72it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.71it/s]
+  step 100/1249 | 1.07s per step
+  step 200/1249 | 0.90s per step
+  step 300/1249 | 0.92s per step
+  step 400/1249 | 0.91s per step
+  step 500/1249 | 0.99s per step
+  step 600/1249 | 0.91s per step
+  step 700/1249 | 0.89s per step
+  step 800/1249 | 1.03s per step
+  step 900/1249 | 0.97s per step
+  step 1000/1249 | 0.86s per step
+  step 1100/1249 | 0.88s per step
+  step 1200/1249 | 0.99s per step
+Epoch 4 | loss 0.779 | macro-F1 0.485 | weighted-F1 0.604 | 1210s  <- best
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  2.11it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  2.10it/s]
+Best epoch 4: validation macro-F1 0.485. Saved artifacts/roberta_context3/seed_42
+
+[1;36mUpgrade test finished.[0m

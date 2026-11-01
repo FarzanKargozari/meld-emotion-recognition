@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+data/
+results/
+*.tar.gz
+*.pkl
+*.p
+*.pt
+*.hdf5
+*.npz
+artifacts/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/

@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "presentation": { "reveal": "always", "panel": "dedicated", "clear": true, "focus": true },
+  "tasks": [
+    {
+      "label": "Run tests",
+      "type": "shell",
+      "command": "bash scripts/guide.sh check",
+      "problemMatcher": []
+    },
+    {
+      "label": "Smoke test",
+      "type": "shell",
+      "command": "bash scripts/guide.sh practice",
+      "problemMatcher": []
+    },
+    {
+      "label": "Train distilroberta designs",
+      "type": "shell",
+      "command": "bash scripts/guide.sh train",
+      "problemMatcher": []
+    },
+    {
+      "label": "Train roberta_context3",
+      "type": "shell",
+      "command": "bash scripts/guide.sh train-upgrade",
+      "problemMatcher": []
+    },
+    {
+      "label": "Compare validation results",
+      "type": "shell",
+      "command": "bash scripts/guide.sh compare",
+      "problemMatcher": []
+    },
+    {
+      "label": "Final test",
+      "type": "shell",
+      "command": "bash scripts/guide.sh final",
+      "problemMatcher": []
+    }
+  ]
+}

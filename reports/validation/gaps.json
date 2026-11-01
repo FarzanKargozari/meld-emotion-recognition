@@ -1,0 +1,94 @@
+{
+  "dialogues": 114,
+  "resamples": 2000,
+  "gaps": [
+    {
+      "first": "distilroberta_context3",
+      "second": "distilroberta_utterance",
+      "gap": 0.018290039501812738,
+      "ci_low": -0.001247015189676427,
+      "ci_high": 0.038001840819601715,
+      "share_above_zero": 0.9625
+    },
+    {
+      "first": "distilroberta_context3_speakers",
+      "second": "distilroberta_utterance",
+      "gap": 0.01101126924607776,
+      "ci_low": -0.01379390897736267,
+      "ci_high": 0.0354544797806142,
+      "share_above_zero": 0.7895
+    },
+    {
+      "first": "distilroberta_context3",
+      "second": "distilroberta_context3_speakers",
+      "gap": 0.007278770255734979,
+      "ci_low": -0.015148620666789453,
+      "ci_high": 0.029246481888271194,
+      "share_above_zero": 0.7505
+    },
+    {
+      "first": "roberta_context3",
+      "second": "distilroberta_context3",
+      "gap": 0.03918843756067214,
+      "ci_low": 0.011693263029509881,
+      "ci_high": 0.06749405542952036,
+      "share_above_zero": 0.9985
+    }
+  ],
+  "per_class_f1": {
+    "distilroberta_utterance": {
+      "neutral": 0.7515780496228639,
+      "surprise": 0.6122408420402691,
+      "fear": 0.16353329506314582,
+      "sadness": 0.360468431404392,
+      "joy": 0.5375905615818756,
+      "disgust": 0.21299145299145297,
+      "anger": 0.3955105951447733
+    },
+    "distilroberta_context3": {
+      "neutral": 0.7568992318025938,
+      "surprise": 0.6333807965855444,
+      "fear": 0.1958815958815959,
+      "sadness": 0.3965753530941942,
+      "joy": 0.5581226030934381,
+      "disgust": 0.21018518518518517,
+      "anger": 0.41089873871891075
+    },
+    "distilroberta_context3_speakers": {
+      "neutral": 0.7490529744017783,
+      "surprise": 0.6250972149657205,
+      "fear": 0.18884559884559884,
+      "sadness": 0.40475214131263576,
+      "joy": 0.5395845082338594,
+      "disgust": 0.19957413859852882,
+      "anger": 0.4040855362131957
+    },
+    "roberta_context3": {
+      "neutral": 0.7413858358345076,
+      "surprise": 0.651078876434095,
+      "fear": 0.3079281065118988,
+      "sadness": 0.407339561580265,
+      "joy": 0.5786290998515108,
+      "disgust": 0.3034024455077086,
+      "anger": 0.4464986415661818
+    }
+  },
+  "three_seed_ensembles": {
+    "distilroberta_utterance": {
+      "macro_f1": 0.4299610053059464,
+      "accuracy": 0.5924256086564472
+    },
+    "distilroberta_context3": {
+      "macro_f1": 0.45683486180723865,
+      "accuracy": 0.6041478809738503
+    },
+    "distilroberta_context3_speakers": {
+      "macro_f1": 0.4451726699744802,
+      "accuracy": 0.6005410279531109
+    },
+    "roberta_context3": {
+      "macro_f1": 0.5106949660437304,
+      "accuracy": 0.6257889990982868
+    }
+  }
+}

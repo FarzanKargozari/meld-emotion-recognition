@@ -1,0 +1,61 @@
+{
+  "split": "validation",
+  "examples": 1109,
+  "runs": {
+    "text": "text_20261030_223057_702040",
+    "audio": "audio_20261030_223206_949255"
+  },
+  "device": "cpu",
+  "torch_version": "2.10.0",
+  "method": "Weighted average of uncalibrated softmax probabilities from frozen models",
+  "candidate_audio_weights": [
+    0.0,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "selection_rule": "Highest validation macro-F1; ties favor less audio",
+  "selected": {
+    "text_weight": 1.0,
+    "audio_weight": 0.0,
+    "accuracy": 0.5626690712353472,
+    "macro_f1": 0.3745535894165152,
+    "weighted_f1": 0.5422955133464035
+  },
+  "delta_macro_f1_vs_text": 0.0,
+  "changed_predictions_vs_text": 0,
+  "corrected_vs_text": 0,
+  "harmed_vs_text": 0,
+  "comparison": [
+    {
+      "text_weight": 1.0,
+      "audio_weight": 0.0,
+      "accuracy": 0.5626690712353472,
+      "macro_f1": 0.3745535894165152,
+      "weighted_f1": 0.5422955133464035
+    },
+    {
+      "text_weight": 0.95,
+      "audio_weight": 0.05,
+      "accuracy": 0.5626690712353472,
+      "macro_f1": 0.36748502981610154,
+      "weighted_f1": 0.5398598129526561
+    },
+    {
+      "text_weight": 0.9,
+      "audio_weight": 0.1,
+      "accuracy": 0.5662759242560865,
+      "macro_f1": 0.36966112661227823,
+      "weighted_f1": 0.5420543919815302
+    },
+    {
+      "text_weight": 0.8,
+      "audio_weight": 0.2,
+      "accuracy": 0.5671776375112714,
+      "macro_f1": 0.3661280020492651,
+      "weighted_f1": 0.5416462314737711
+    }
+  ],
+  "test_evaluated": false,
+  "limitation": "Exploratory validation selection on one pair of trained checkpoints; not independent evidence of a generalization gain"
+}

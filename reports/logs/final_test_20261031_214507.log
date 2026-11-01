@@ -1,0 +1,19 @@
+
+[1;36mFinal test: roberta_context3[0m
+The selected model now sees the 2,610 test lines it has never seen. This happens only once.
+W1031 21:45:11.256000 4337 .venv/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 201/201 [00:00<00:00, 6303.12it/s]
+
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 201/201 [00:00<00:00, 6433.42it/s]
+
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 201/201 [00:00<00:00, 5405.24it/s]
+test: roberta_context3 across 3 seeds
+Macro-F1 0.470 ± 0.010 | weighted-F1 0.627 ± 0.007
+Ensemble macro-F1 0.486 | weighted-F1 0.641
+Saved reports/test/roberta_context3
+
+[1;36mFinal test finished.[0m

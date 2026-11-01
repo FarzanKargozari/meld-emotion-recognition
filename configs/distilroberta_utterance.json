@@ -1,0 +1,6 @@
+{
+  "name": "distilroberta_utterance",
+  "model": "distilroberta-base",
+  "context_size": 0,
+  "use_speakers": false
+}

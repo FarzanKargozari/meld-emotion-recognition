@@ -1,0 +1,110 @@
+[
+  {
+    "experiment": "distilroberta_context3",
+    "seed": 123,
+    "best_epoch": 4,
+    "minutes": 32.90674406687419,
+    "accuracy": 0.6086564472497745,
+    "macro_f1": 0.46043393493597545,
+    "weighted_f1": 0.6016281554477065
+  },
+  {
+    "experiment": "distilroberta_context3",
+    "seed": 42,
+    "best_epoch": 4,
+    "minutes": 61.6241734623909,
+    "accuracy": 0.5906221821460775,
+    "macro_f1": 0.43447462062776915,
+    "weighted_f1": 0.5828182277146791
+  },
+  {
+    "experiment": "distilroberta_context3",
+    "seed": 7,
+    "best_epoch": 3,
+    "minutes": 33.18596093654632,
+    "accuracy": 0.6104598737601443,
+    "macro_f1": 0.46021008916259637,
+    "weighted_f1": 0.6038415840136321
+  },
+  {
+    "experiment": "distilroberta_context3_speakers",
+    "seed": 123,
+    "best_epoch": 4,
+    "minutes": 37.20657823483149,
+    "accuracy": 0.6014427412082958,
+    "macro_f1": 0.46828583930196205,
+    "weighted_f1": 0.5954385247660657
+  },
+  {
+    "experiment": "distilroberta_context3_speakers",
+    "seed": 42,
+    "best_epoch": 4,
+    "minutes": 36.958021612962085,
+    "accuracy": 0.5942290351668169,
+    "macro_f1": 0.4326129600745162,
+    "weighted_f1": 0.5892695329647033
+  },
+  {
+    "experiment": "distilroberta_context3_speakers",
+    "seed": 7,
+    "best_epoch": 3,
+    "minutes": 37.335667447249094,
+    "accuracy": 0.5861136158701533,
+    "macro_f1": 0.43238353458265777,
+    "weighted_f1": 0.5803111977745314
+  },
+  {
+    "experiment": "distilroberta_utterance",
+    "seed": 123,
+    "best_epoch": 3,
+    "minutes": 17.534018711249033,
+    "accuracy": 0.5861136158701533,
+    "macro_f1": 0.42673611636953657,
+    "weighted_f1": 0.5822118400768078
+  },
+  {
+    "experiment": "distilroberta_utterance",
+    "seed": 42,
+    "best_epoch": 4,
+    "minutes": 36.013412702083585,
+    "accuracy": 0.5906221821460775,
+    "macro_f1": 0.4438355692192165,
+    "weighted_f1": 0.5805728151367266
+  },
+  {
+    "experiment": "distilroberta_utterance",
+    "seed": 7,
+    "best_epoch": 3,
+    "minutes": 18.43891760905584,
+    "accuracy": 0.5924256086564472,
+    "macro_f1": 0.42967684063214945,
+    "weighted_f1": 0.5805625004528526
+  },
+  {
+    "experiment": "roberta_context3",
+    "seed": 123,
+    "best_epoch": 4,
+    "minutes": 75.02519592046738,
+    "accuracy": 0.6113615870153292,
+    "macro_f1": 0.5042345324291944,
+    "weighted_f1": 0.6091205398400046
+  },
+  {
+    "experiment": "roberta_context3",
+    "seed": 42,
+    "best_epoch": 4,
+    "minutes": 74.15887373288473,
+    "accuracy": 0.6014427412082958,
+    "macro_f1": 0.4847645663255376,
+    "weighted_f1": 0.6036985437658974
+  },
+  {
+    "experiment": "roberta_context3",
+    "seed": 7,
+    "best_epoch": 4,
+    "minutes": 77.54807617664338,
+    "accuracy": 0.6086564472497745,
+    "macro_f1": 0.4836848586536256,
+    "weighted_f1": 0.6076065587921411
+  }
+]

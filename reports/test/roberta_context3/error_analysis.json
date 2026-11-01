@@ -1,0 +1,115 @@
+{
+  "note": "Three-seed ensemble on the test split, described after the model was final.",
+  "top_confusions": [
+    {
+      "true": "neutral",
+      "predicted": "joy",
+      "lines": 90,
+      "share_of_true": 0.07165605095541401
+    },
+    {
+      "true": "neutral",
+      "predicted": "surprise",
+      "lines": 71,
+      "share_of_true": 0.05652866242038217
+    },
+    {
+      "true": "joy",
+      "predicted": "neutral",
+      "lines": 65,
+      "share_of_true": 0.16169154228855723
+    },
+    {
+      "true": "sadness",
+      "predicted": "neutral",
+      "lines": 57,
+      "share_of_true": 0.27403846153846156
+    },
+    {
+      "true": "neutral",
+      "predicted": "sadness",
+      "lines": 56,
+      "share_of_true": 0.044585987261146494
+    },
+    {
+      "true": "anger",
+      "predicted": "surprise",
+      "lines": 54,
+      "share_of_true": 0.1565217391304348
+    },
+    {
+      "true": "anger",
+      "predicted": "neutral",
+      "lines": 53,
+      "share_of_true": 0.1536231884057971
+    },
+    {
+      "true": "neutral",
+      "predicted": "anger",
+      "lines": 45,
+      "share_of_true": 0.035828025477707005
+    }
+  ],
+  "by_line_length": {
+    "1-3 words": {
+      "lines": 715,
+      "accuracy": 0.7034965034965035,
+      "macro_f1": 0.5506671912126998,
+      "weighted_f1": 0.7053089136635057
+    },
+    "4-8 words": {
+      "lines": 863,
+      "accuracy": 0.6628041714947857,
+      "macro_f1": 0.48448547649374646,
+      "weighted_f1": 0.6658759835700463
+    },
+    "9-15 words": {
+      "lines": 659,
+      "accuracy": 0.6054628224582701,
+      "macro_f1": 0.4695846371265238,
+      "weighted_f1": 0.6099634786382196
+    },
+    "16+ words": {
+      "lines": 373,
+      "accuracy": 0.514745308310992,
+      "macro_f1": 0.38645008816438936,
+      "weighted_f1": 0.513476746718515
+    }
+  },
+  "by_position": {
+    "first line of a dialogue": {
+      "lines": 280,
+      "accuracy": 0.6928571428571428,
+      "macro_f1": 0.5792186145626769,
+      "weighted_f1": 0.6892982951154623
+    },
+    "later lines": {
+      "lines": 2330,
+      "accuracy": 0.6317596566523606,
+      "macro_f1": 0.47773236746298414,
+      "weighted_f1": 0.6345348391029142
+    }
+  },
+  "by_confidence": [
+    {
+      "minimum_confidence": 0.0,
+      "share_of_lines": 1.0,
+      "accuracy": 0.6383141762452107
+    },
+    {
+      "minimum_confidence": 0.4,
+      "share_of_lines": 0.8724137931034482,
+      "accuracy": 0.6767676767676768
+    },
+    {
+      "minimum_confidence": 0.6,
+      "share_of_lines": 0.5743295019157089,
+      "accuracy": 0.7891927951967979
+    },
+    {
+      "minimum_confidence": 0.8,
+      "share_of_lines": 0.23563218390804597,
+      "accuracy": 0.8829268292682927
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "split": "validation",
+  "seeds": [
+    42,
+    7,
+    123
+  ],
+  "aggregate": {
+    "Original text": {
+      "macro_f1": {
+        "mean": 0.37671197168706555,
+        "sample_std": 0.006918950527538051
+      },
+      "weighted_f1": {
+        "mean": 0.536821263492232,
+        "sample_std": 0.0068798078067645796
+      },
+      "accuracy": {
+        "mean": 0.5506462278328825,
+        "sample_std": 0.010567115017280979
+      }
+    },
+    "MiniLM": {
+      "macro_f1": {
+        "mean": 0.3885852814044155,
+        "sample_std": 0.010837345294672486
+      },
+      "weighted_f1": {
+        "mean": 0.5352186020814196,
+        "sample_std": 0.010122651737829403
+      },
+      "accuracy": {
+        "mean": 0.5473399458972047,
+        "sample_std": 0.01252700089220003
+      }
+    }
+  },
+  "runs": [
+    {
+      "model": "Original text",
+      "seed": 42,
+      "run": "text_20261030_223057_702040",
+      "best_epoch": 5,
+      "accuracy": 0.5626690712353472,
+      "macro_f1": 0.3745535894165152,
+      "weighted_f1": 0.5422955133464035
+    },
+    {
+      "model": "MiniLM",
+      "seed": 42,
+      "run": "minilm_text_20261030_225048_111416",
+      "best_epoch": 5,
+      "accuracy": 0.539224526600541,
+      "macro_f1": 0.3826788398363718,
+      "weighted_f1": 0.5274110649017615
+    },
+    {
+      "model": "Original text",
+      "seed": 7,
+      "run": "text_20261030_225228_117971",
+      "best_epoch": 12,
+      "accuracy": 0.5428313796212805,
+      "macro_f1": 0.3711294876664097,
+      "weighted_f1": 0.5290985396183199
+    },
+    {
+      "model": "MiniLM",
+      "seed": 7,
+      "run": "minilm_text_20261030_225309_115864",
+      "best_epoch": 2,
+      "accuracy": 0.5617673579801623,
+      "macro_f1": 0.4010927428196139,
+      "weighted_f1": 0.546655620341648
+    },
+    {
+      "model": "Original text",
+      "seed": 123,
+      "run": "text_20261030_225336_991130",
+      "best_epoch": 5,
+      "accuracy": 0.5464382326420198,
+      "macro_f1": 0.38445283797827184,
+      "weighted_f1": 0.5390697375119727
+    },
+    {
+      "model": "MiniLM",
+      "seed": 123,
+      "run": "minilm_text_20261030_225357_404217",
+      "best_epoch": 3,
+      "accuracy": 0.5410279531109107,
+      "macro_f1": 0.3819842615572609,
+      "weighted_f1": 0.5315891210008492
+    }
+  ],
+  "std_definition": "Sample standard deviation across three seeds (ddof=1), not a confidence interval",
+  "test_evaluated": false
+}

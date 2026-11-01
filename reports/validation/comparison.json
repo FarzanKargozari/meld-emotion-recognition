@@ -1,0 +1,58 @@
+[
+  {
+    "experiment": "roberta_context3",
+    "seeds": [
+      7,
+      42,
+      123
+    ],
+    "macro_f1": 0.4908946524694525,
+    "macro_f1_sd": 0.011565281672723665,
+    "weighted_f1": 0.6068085474660143,
+    "weighted_f1_sd": 0.0027977002903060233,
+    "accuracy": 0.6071535918244665,
+    "accuracy_sd": 0.005127358614136457
+  },
+  {
+    "experiment": "distilroberta_context3",
+    "seeds": [
+      7,
+      42,
+      123
+    ],
+    "macro_f1": 0.4517062149087803,
+    "macro_f1_sd": 0.014923418101480563,
+    "weighted_f1": 0.5960959890586726,
+    "weighted_f1_sd": 0.011552013947150075,
+    "accuracy": 0.6032461677186655,
+    "accuracy_sd": 0.010969815203423312
+  },
+  {
+    "experiment": "distilroberta_context3_speakers",
+    "seeds": [
+      7,
+      42,
+      123
+    ],
+    "macro_f1": 0.44442744465304534,
+    "macro_f1_sd": 0.020662294292543397,
+    "weighted_f1": 0.5883397518351001,
+    "weighted_f1_sd": 0.00760640356468976,
+    "accuracy": 0.5939284640817554,
+    "accuracy_sd": 0.007668981558264539
+  },
+  {
+    "experiment": "distilroberta_utterance",
+    "seeds": [
+      7,
+      42,
+      123
+    ],
+    "macro_f1": 0.43341617540696753,
+    "macro_f1_sd": 0.009142471786023171,
+    "weighted_f1": 0.5811157185554624,
+    "weighted_f1_sd": 0.0009492830928355141,
+    "accuracy": 0.5897204688908927,
+    "accuracy_sd": 0.0032511733773344996
+  }
+]

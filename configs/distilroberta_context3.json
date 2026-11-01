@@ -1,0 +1,8 @@
+{
+  "name": "distilroberta_context3",
+  "model": "distilroberta-base",
+  "context_size": 3,
+  "use_speakers": false,
+  "batch_size": 8,
+  "accumulation_steps": 2
+}

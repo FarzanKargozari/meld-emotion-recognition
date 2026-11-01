@@ -1,0 +1,14 @@
+[
+  {
+    "timestamp": "2026-11-01T01:47:47+00:00",
+    "experiment": "roberta_context3",
+    "commit": null,
+    "seeds": [
+      123,
+      42,
+      7
+    ],
+    "macro_f1_seed_mean": 0.4699853874882608,
+    "weighted_f1_seed_mean": 0.6274944541166527
+  }
+]

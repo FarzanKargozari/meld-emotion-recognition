@@ -1,0 +1,39 @@
+{
+  "split": "test",
+  "examples": 2610,
+  "selected_by_validation": "text",
+  "selection_rule": "Highest validation macro-F1 among the three fixed runs",
+  "runs": {
+    "text": "text_20261030_223057_702040",
+    "audio": "audio_20261030_223206_949255",
+    "both": "both_20261030_222925_430205"
+  },
+  "device": "mps",
+  "results": [
+    {
+      "model": "majority",
+      "accuracy": 0.4812260536398467,
+      "macro_f1": 0.0928238858916562,
+      "weighted_f1": 0.3126849060381001
+    },
+    {
+      "model": "text",
+      "accuracy": 0.5900383141762452,
+      "macro_f1": 0.38340786231833146,
+      "weighted_f1": 0.5786152283266163
+    },
+    {
+      "model": "audio",
+      "accuracy": 0.32988505747126434,
+      "macro_f1": 0.1963492400844662,
+      "weighted_f1": 0.3438326080942695
+    },
+    {
+      "model": "both",
+      "accuracy": 0.4279693486590038,
+      "macro_f1": 0.29328844883057187,
+      "weighted_f1": 0.4625875461518311
+    }
+  ],
+  "scope": "One seed; classification from published precomputed MELD features"
+}
