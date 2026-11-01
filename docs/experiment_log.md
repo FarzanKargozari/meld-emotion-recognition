@@ -9,7 +9,7 @@ Newest state first. Numbers come from saved files unless marked as an estimate.
 - Selected design: `roberta_context3`, validation macro-F1 0.491 ± 0.012.
 - The final test ran once, at 21:47: **test macro-F1 0.470 ± 0.010**.
 - The test split is now closed. No model may be chosen or changed using these scores.
-- Next: repository cleanup and write-up.
+- The repository is published, and its automated checks pass.
 
 ## Final test
 
@@ -43,7 +43,6 @@ Ensemble F1 on test, against the original baseline:
 | joy | 402 | 0.547 | 0.618 |
 | disgust | 68 | 0.144 | 0.298 |
 | anger | 345 | 0.400 | 0.495 |
-- Nothing has been committed or published. The folder is not a git repository yet.
 
 ## Setup
 
@@ -221,9 +220,8 @@ Order of events. Times are local on 31 October unless stated.
   and blank text was rejected with status 422.
 - Scan of the publishable copy: no dashboard token, local network address or personal name, and no data, model or
   checkpoint files outside `reports/`.
-- The GitHub Actions workflow has not run yet, because it needs a GitHub repository.
+- GitHub Actions: lint, 37 tests and the Docker build all passed on the first run.
 
 ## Next
 
 1. Optional: compare with an LLM on sample lines the project creates, without using the closed test split for choices.
-2. Run `git init`, then commit and publish only with approval.
